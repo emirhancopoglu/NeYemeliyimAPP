@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".NeYemeliyimAnaSayfa2">
+
+    <TextView
+        android:id="@+id/tv_egzrutin"
+        android:layout_width="391dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="monospace"
+        android:text=" Egzersiz Rutininiz"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupEgzersiz"
+        android:layout_width="396dp"
+        android:layout_height="165dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.194">
+
+        <RadioButton
+            android:id="@+id/rb_cokegzersiz"
+            android:layout_width="match_parent"
+            android:fontFamily="monospace"
+            android:buttonTint="@android:color/white"
+            android:layout_height="55dp"
+            android:textColor="@color/white"
+            android:text="Çok egzersiz yaparım (Haftada 5-6 gün)." />
+
+        <RadioButton
+            android:id="@+id/rb_ortaegzersiz"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:buttonTint="@android:color/white"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:text="Orta egzersiz yaparım (Haftada 3-4 gün)." />
+
+        <RadioButton
+            android:id="@+id/rb_azegzersiz"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:fontFamily="monospace"
+            android:buttonTint="@android:color/white"
+            android:textColor="@color/white"
+            android:text="Az egzersiz yaparım (Haftada 1-2 gün)." />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_kalorihedef"
+        android:layout_width="391dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="monospace"
+        android:text="  Kalori Hedefiniz"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupKiloHedefi"
+        android:layout_width="386dp"
+        android:layout_height="163dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.716" >
+
+        <RadioButton
+            android:id="@+id/rb_kiloal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:buttonTint="@android:color/white"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:text="Kilo almak istiyorum." />
+
+        <RadioButton
+            android:id="@+id/rb_kilover"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:buttonTint="@android:color/white"
+            android:text="Kilo vermek istiyorum." />
+
+        <RadioButton
+            android:id="@+id/rb_kiloayni"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:buttonTint="@android:color/white"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:text="Mevcut kilomda kalmak istiyorum." />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_hesapla"
+        android:layout_width="395dp"
+        android:layout_height="60dp"
+        android:text="HESAPLA"
+        android:fontFamily="monospace"
+        android:textSize="22dp"
+        android:textStyle="bold|italic"
+        android:backgroundTint="@color/design_default_color_on_primary"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
